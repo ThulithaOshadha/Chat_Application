@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerFormController">
+   <children>
+      <ImageView fitHeight="561.0" fitWidth="505.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/Login_Page_Crop.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="#eeeff2" layoutX="39.0" layoutY="501.0" onKeyPressed="#loginFromEnterOnAction" prefHeight="31.0" prefWidth="322.0" promptText="Enter user name to continue" unFocusColor="#f5f0f0" />
+      <JFXButton layoutX="398.0" layoutY="501.0" onAction="#loginOnAction" style="-fx-background-color: #364ea7;" text="Login" textFill="#e4e6eb">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

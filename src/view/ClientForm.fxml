@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+   <children>
+      <TextField fx:id="txtMsgField" layoutX="73.0" layoutY="528.0" onKeyPressed="#sendFromEnter" prefHeight="31.0" prefWidth="413.0" style="-fx-background-radius: 15;">
+         <font>
+            <Font name="Open Sans" size="15.0" />
+         </font></TextField>
+      <JFXButton fx:id="btnMsgSend" layoutX="498.0" layoutY="528.0" onAction="#sendOnAction" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #131880; -fx-background-radius: 20;" text="Send" textFill="#f7f8f7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="msgArea" focusColor="#131880" layoutX="33.0" layoutY="71.0" prefHeight="436.0" prefWidth="527.0" unFocusColor="#131880" />
+      <Label layoutX="271.0" layoutY="34.0" prefHeight="31.0" prefWidth="59.0" text="Open" textFill="#1fb244">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="txtScrollPane" layoutX="33.0" layoutY="91.0" prefHeight="396.0" prefWidth="527.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="309.0" prefWidth="484.0">
+               <children>
+                  <VBox fx:id="vBox" layoutX="-12.0" prefHeight="370.0" prefWidth="469.0" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="322.0" layoutY="34.0" prefHeight="31.0" prefWidth="59.0" text=" Chat" textFill="#131880">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnImg" fitHeight="31.0" fitWidth="38.0" layoutX="22.0" layoutY="528.0" onMouseReleased="#sendimageOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/pngegg%20(34).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
